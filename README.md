@@ -3,6 +3,6 @@ Synchronizes Assetto Corsa Competizione setups to be available across all tracks
 
 # Usage
 1. Make a backup of your setups, they will be renamed and copied all over the place
-1. Run `accSetupSync.py` as main with the `-i` argument, and pass the path to your setups (Usually "C:\Users\<user>\Documents\Assetto Corsa Competizione\Setups")
-1. Run `accSetupSync.py` as main again but this time without the `-i` argument, but still with the path argument
+1. Run `python accSetupSync.py -i <pathToYourSetups>` to copy your setups to all tracks, while also making their names unique
+1. Run `python accSetupSync.py <pathToYourSetups>` to start watching the setups folders for changes
 1. Use ctrl+c to terminate
