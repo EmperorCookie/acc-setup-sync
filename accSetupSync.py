@@ -99,6 +99,7 @@ class EventHandler(FileSystemEventHandler):
                     
                     # Copy setups
                     for setup in setups:
+                        setupPath = os.path.join(carDir, trackName, setup)
                         targetPath = os.path.join(carDir, track, setup)
                         if not os.path.isfile(targetPath):
                             logging.info(f"Copying {setup} from {trackName} to {track}")
